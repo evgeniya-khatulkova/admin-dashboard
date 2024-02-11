@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard project</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search_container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>magnify</title><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
+                <div class="searchbar"></div>
+            </div>
+            <div class="profile_container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bell-badge-outline</title><path d="M19 17V11.8C18.5 11.9 18 12 17.5 12H17V18H7V11C7 8.2 9.2 6 12 6C12.1 4.7 12.7 3.6 13.5 2.7C13.2 2.3 12.6 2 12 2C10.9 2 10 2.9 10 4V4.3C7 5.2 5 7.9 5 11V17L3 19V20H21V19L19 17M10 21C10 22.1 10.9 23 12 23S14 22.1 14 21H10M21 6.5C21 8.4 19.4 10 17.5 10S14 8.4 14 6.5 15.6 3 17.5 3 21 4.6 21 6.5" /></svg>
+                <img class="small-avatar" src="./images/at+button.webp" alt="avatar">
+                <div class="users_name">Jake The Dog</div>
+            </div>
+            <div class="intro_container">
+                <img src="./images/at+button.webp" alt="avatar" width="55px">
+                <div class="introduction">Hi there,<br> JACK THE DOG <strong>@webdog</strong></div>
+            </div>
+            <div class="quick_acces_container">
+                <button class="quick_acces">New</button>
+                <button class="quick_acces">Upload</button>
+                <button class="quick_acces">Share</button>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="title"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>view-dashboard-outline</title><path d="M19,5V7H15V5H19M9,5V11H5V5H9M19,13V19H15V13H19M9,17V19H5V17H9M21,3H13V9H21V3M11,3H3V13H11V3M21,11H13V21H21V11M11,15H3V21H11V15Z" /></svg> Dashboard</div>
+            <div class="functionality">
+                <div class="function"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>home-heart</title><path d="M2,12L12,3L22,12H19V20H5V12H2M12,18L12.72,17.34C15.3,15 17,13.46 17,11.57C17,10.03 15.79,8.82 14.25,8.82C13.38,8.82 12.55,9.23 12,9.87C11.45,9.23 10.62,8.82 9.75,8.82C8.21,8.82 7,10.03 7,11.57C7,13.46 8.7,15 11.28,17.34L12,18Z" /></svg>Home</div>
+                <div class="function">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account</title><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" /></svg>
+                    <span>Profile</span>
+                </div>
+                <div class="function">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>message-badge</title><path d="M22 7V16C22 17.1 21.1 18 20 18H6L2 22V4C2 2.9 2.9 2 4 2H14.1C14 2.3 14 2.7 14 3C14 5.8 16.2 8 19 8C20.1 8 21.2 7.6 22 7M16 3C16 4.7 17.3 6 19 6S22 4.7 22 3 20.7 0 19 0 16 1.3 16 3Z" /></svg>
+                    <span>Messages</span>
+                </div>
+                <div class="function">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>history</title><path d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" /></svg>
+                    <span>History</span>
+                </div>
+                <div class="function">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>note-alert</title><path d="M3 3C1.89 3 1 3.89 1 5V19C1 20.11 1.9 21 3 21H17C18.11 21 19 20.11 19 19V9L13 3H3M12 10V4.5L17.5 10H12M23 7V13H21V7H23M21 15H23V17H21V15Z" /></svg>
+                    <span>Tasks</span>
+                </div>
+                <div class="function">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>account-group</title><path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z" /></svg>
+                    <span>Communities</span>
+                </div>
+            </div>
+            <div class="settings">
+                <div class="setting">Settings</div>
+                <div class="setting">Support</div>
+                <div class="setting">Privacy</div>
+            </div>
+        </div>
+        <div class="main_article">
+          <div class="card projects">
+            <div class="content content-projects">
+                <div class="project-item">
+                    <span class="label">Super Cool Project</span>
+                    <div class="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum culpa laborum nostrum alias minima nesciunt ipsum suscipit magnam vitae minus. Laboriosam eveniet est debitit.</div>
+                </div>
+                <div class="project-item">
+                    <span class="label">Impossible App</span>
+                    <div class="text-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa adipisci quam excepturi corporis odio nesciunt. Earum expedita itaque numquam facilis. Ad obcaecati velit.</div>
+                </div>
+                <div class="project-item">
+                    <span class="label">Less Cool Project</span>
+                    <div class="text-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem explicabo maxime rem vel quibusdam dicta fugiat voluptas qui quam? Voluptas sit mollitia.</div>
+                </div>
+                <div class="project-item">
+                    <span class="label">Easy Peasy App</span>
+                    <div class="text-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, alias reprehenderit aspernatur veritatis beatae animi dolore eum dignissimos ea suscipit?</div>
+                </div>
+                <div class="project-item">
+                    <span class="label">Ad Blocker</span>
+                    <div class="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+                </div>
+                <div class="project-item">
+                    <span class="label">Money Maker</span>
+                    <div class="text-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi vitae corporis fugiat sunt hic rerum similique repellat nulla eveniet tempore natus.</div>
+                </div>
+            </div>
+          </div>
+          <div class="card announcments">
+            <span class="label">Announcments</span>
+            <div class="content-announcment">
+                <div class="wrapper">
+                    <div class="sub-label">Site Maintansnce</div>
+                    <div class="text-content">Animi vitae corporis fugiat sunt hic rerum similique repellat.</div>
+                </div>
+                <div class="wrapper">
+                    <div class="sub-label">Web Developers' Strike</div>
+                    <div class="text-content">Sit amet consectetur adipisicing elit. Animi vitae.</div>
+                </div>
+                <div class="wrapper last">
+                    <div class="sub-label">New Cool Feature</div>
+                    <div class="text-content">Eum culpa laborum nostrum alias minima nesciunt ipsum suscipit magnam vitae minus.</div>
+                </div>
+            </div>
+          </div>
+          <div class="card trending">
+            <span class="label">Trending</span>
+            <div class="content-trending">
+                <div class="wrapper">
+                    <img class="small-avatar" src="./images/iceking.jpg" alt="avatar">
+                    <span class="sub-label">@iceKing</span>
+                    <div class="text-content">World piece builder</div>
+                </div>
+
+                <div class="wrapper">
+                    <img class='small-avatar' src="./images/gunter.jpg" alt="avatar">
+                    <span class="sub-label">@gunter</span>
+                    <div class="text-content">No traffic maker</div>
+                </div>
+
+                <div class="wrapper">
+                    <img class="small-avatar" src="./images/marselline.jpg" alt="avatar">
+                    <span class="sub-label">@marselline</span>
+                    <div class="text-content">Pancaces worshipper</div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
